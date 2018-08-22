@@ -9,13 +9,17 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
-          <Route exact path="/">
-            <div className="container">
-              <p className="App-intro">
-                To get started, edit <code>src/App.js</code> and save to reload.
-              </p>
-            </div>
-          </Route>
+          <div className="container" style={{ marginTop: '80px' }}>
+            <Switch>
+              <Route exact path="/">
+                <p className="App-intro">
+                  To get started, edit <code>src/App.js</code> and save to
+                  reload.
+                </p>
+              </Route>
+              <Route path="/cart" />
+            </Switch>
+          </div>
         </div>
       </Router>
     );
