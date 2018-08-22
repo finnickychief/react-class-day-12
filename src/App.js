@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
+          <Navbar />
           <Route exact path="/">
             <div className="container">
               <p className="App-intro">
