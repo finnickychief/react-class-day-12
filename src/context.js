@@ -1,7 +1,7 @@
 // Global context for entire application
 import React from 'react';
 
-const Context = react.createContext();
+const Context = React.createContext();
 
 // Reducers
 const reducer = (state, action) => {
@@ -14,8 +14,8 @@ const reducer = (state, action) => {
 // Provider
 export class Provider extends React.Component {
   state = {
-    productList = [],
-    cartItems = [],
+    productList: [],
+    cartItems: [],
     dispatch: action => this.setState(state => reducer(state, action))
   };
 
